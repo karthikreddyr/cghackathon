@@ -1,0 +1,165 @@
+<nav class="navbar navbar-default" style="border-bottom: 1px solid #ccc;">
+  <div class="container">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="styles/images/logo.png" width="162" height="53"></a>
+     </div>
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+           <li class="active"><a href="#">Dashboard <span class="sr-only">(current)</span></a></li>
+           <li><a href="#">Help</a></li>
+           <li><a href="#" style="border:none;">Support</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+           <li class="dropdown">
+              <a href="#" class="dropdown-toggle" style="border:none;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Welcome John Smith <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                 <li><a href="#">Action</a></li>
+                 <li><a href="#">Sign Out</a></li>
+              </ul>
+           </li>
+        </ul>
+     </div>
+     <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<div class="container">
+  <div class="container">
+     <div>
+        <div class="row">
+           <div class="col-sm-2">
+             <div class="row left_sec">
+   <ul>
+   <li>My Accounts</li>
+   <li><a href="#">Andhra Bank <br> 567667888889</a></li>
+   </ul>
+   </div>
+           </div>
+           <div class="col-sm-10">
+   <div class="right_sec">
+              <div class="row">
+    <div class="col-xs-7">
+    <b>Andhra Bank (567667888889)</b> 
+    </div>
+    <div class="col-xs-5 text-right">
+    <ul class="ac_settings">
+    <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Account Settings</a></li>
+    <li><a href="#">Attention <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span></a></li>
+   
+    </ul>
+    </div>
+    </div>
+   <div class="row">
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Account Info </a></li>
+<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"> Monthly Info</a></li>
+<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Communication Details</a></li>
+<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Personal Details</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="home">
+<div class="form-group">
+<ul class="ac_info">
+<li>Current Balance</li>
+<li>:</li>
+<li>1,00,000 INR</li>
+</ul>
+</div>
+<div class="form-group">
+<ul class="ac_info">
+<li>Current Balance</li>
+<li>:</li>
+<li>1,00,000 INR</li>
+</ul>
+</div>
+<div class="form-group">
+<ul class="ac_info">
+<li>Current Balance</li>
+<li>:</li>
+<li>1,00,000 INR</li>
+<li><button class="btn btn-primary btn-xs">Apply</button></li>
+</ul>
+</div>
+</div>
+<div role="tabpanel" class="tab-pane" id="profile">...</div>
+<div role="tabpanel" class="tab-pane" id="messages">...</div>
+<div role="tabpanel" class="tab-pane" id="settings">...</div>
+</div>
+
+</div>
+    </div>
+ 
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+<div class="container">
+  <div class="footer">© Copyright 2017 | BlazeLand Company</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+     <!-- Modal content-->
+     <div class="modal-content">
+        <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 class="modal-title">Request Form</h4>
+        </div>
+        <div class="modal-body">
+           <div class="row form-group">
+              <div class="col-sm-6">
+                 <label>Choose Bank</label><br>
+                 <select class="form-control">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                 </select>
+              </div>
+              <div class="col-sm-6">
+                 <label>Account Number</label><br>
+                 <input type="text" class="form-control">
+              </div>
+           </div>
+           <div class="row form-group">
+              <div class="col-sm-12">
+                 <input type="checkbox" name="vehicle" value="Bike"> I allow BlazeLend app to communicate with bank api to generate OTP
+              </div>
+           </div>
+           <div class="row form-group">
+              <div class="col-sm-12 text-center">
+                 <button type="submit" class="btn btn-primary">GENERATE OTP</button>
+              </div>
+           </div>
+           <div class="row form-group">
+              <div class="col-sm-12 text-center">
+                 <div class="verify-otp">
+                    <div class="form-group">OTP has been sent  to your registered mobile number with provided bank account </div>
+                    <div class="form-group enter_otp">
+                       <label>Enter OTP</label><br>
+                       <input type="text" class="form-control">
+                       <a href="#">Resend (1:58)</a>
+                    </div>
+                    <div><button type="submit" class="btn btn-primary">Verify OTP & Proceed</button></div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        
+     </div>
+  </div>
+</div>
+</div>
