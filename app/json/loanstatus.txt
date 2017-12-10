@@ -1,31 +1,31 @@
 [
     {
     "name" : "JPMorgan Chase",
-    "amount":"10000",
+    "amount":"1500",
     "date":"11/31/2017",
     "status":"Approved"
 },
 {
     "name" : "Bank of America",
-    "amount":"15000",
+    "amount":"2000",
      "date":"12/03/2017",
     "status":"Declined"
 },
 {
     "name" : "Wells Fargo",
-    "amount":"25000",
+    "amount":"4000",
     "date":"12/07/2017",
     "status":"Approved"
 },
 {
     "name" : "Citigroup",
-    "amount":"12500",
+    "amount":"3500",
     "date":"12/09/2017",
     "status":"Approved"
 },
 {
     "name" : "Barclays",
-    "amount":"13400",
+    "amount":"2600",
     "date":"12/10/2017",
     "status":"Approved"
 }
