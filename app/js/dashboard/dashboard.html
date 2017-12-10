@@ -11,6 +11,7 @@
                        <tr>
                           <th>Bank Name</th>
                           <th>Amount</th>
+                          <th>Date</th>
                           <th>Status</th>
                        </tr>
                     </thead>
@@ -18,6 +19,7 @@
                        <tr ng-repeat="item in items">
                           <td>{{item.name}}</td>
                           <td>{{item.amount}}</td>
+                          <td>{{item.date}}</td>
                           <td><button ng-show="item.status =='Approved'" class="btn btn-success btn-xs">{{item.status}}</button>
                             <button ng-show="item.status =='Declined'" class="btn btn-danger btn-xs">{{item.status}}</button>
                             <button ng-show="item.status =='Pending'" class="btn btn-warning btn-xs">{{item.status}}</button>

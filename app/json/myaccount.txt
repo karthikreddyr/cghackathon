@@ -1,5 +1,5 @@
 {
-    "currentbalance":"10,000",
-    "monthlyBlanace" : "5,000",
+    "currentbalance":"1300",
+    "monthlyBlanace" : "5800",
     "eligibleLoanAmount" : "3,000"
 }

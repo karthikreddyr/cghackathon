@@ -12,7 +12,8 @@
                 <div class="col-sm-6">
                    <label>Choose Bank</label><br>
                    <select class="form-control" ng-model="chooseBank">
-                      <option value="JPMorgan Chase">JPMorgan Chase</option>
+                      <option value="">Select</option>  
+                    <option value="JPMorgan Chase">JPMorgan Chase</option>
                       <option value="Bank of America">Bank of America</option>
                       <option value="Wells Fargo">Wells Fargo</option>
                       <option value="Citigroup">Citigroup</option>
@@ -27,12 +28,12 @@
              </div>
              <div class="row form-group">
                 <div class="col-sm-12">
-                   <input type="checkbox" name="vehicle" value="Bike"> I allow BlazeLend app to communicate with bank api to generate OTP
+                   <input type="checkbox" name="vehicle" value="Bike">I allow BlazeLend to access my bank account information for further processing
                 </div>
              </div>
              <div class="row form-group">
                 <div class="col-sm-12 text-center">
-                   <button type="submit" class="btn btn-primary" ng-click="generateOtp()">GENERATE OTP</button>
+                   <button type="submit" class="btn btn-primary" ng-click="generateOtp()">Submit</button>
                 </div>
              </div>
              <div ng-hide="otpHide" class="row form-group">
