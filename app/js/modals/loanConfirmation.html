@@ -1,0 +1,77 @@
+       <!-- Modal content-->
+       <div class="modal-content">
+          <div class="modal-header">
+             <button type="button" class="close" data-dismiss="modal"  ng-click="close()">&times;</button>
+             <h4 class="modal-title">Request For Loan</h4>
+          </div>
+          <div class="modal-body">
+              <span ng-show="loanError" style="color: red;">Enter Details</span>
+              
+             <div class="row form-group">
+                <div class="col-sm-6">
+                   <label>Eligible Loan Amount</label><br>
+                  <div style="font-size:20px;">15,000</div>
+                </div>
+                <div class="col-sm-6">
+                   <label>Enter Required Loan Amount</label><br>
+                   <input type="text" ng-model="requestAmount" class="form-control">
+                </div>
+             </div>               
+          
+             <div class="row form-group">
+                <div class="col-sm-12 text-center">
+                   <div class="verify-otp">
+                      <div class="form-group table_heading">Choose EMI</div>
+                      <div class="form-group">
+                      
+                        <table class="table" id="requestforloanTable">
+                            <thead>
+                               <tr>
+                                 <th>Months</th>
+                                 <th>Rate Of Interest %</th>
+                                 <th>EMI Amount INR</th>
+                                 <th></th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                 <td>3</td>
+                                 <td>2.5</td>
+                                 <td>14800</td>
+                                 <td><div><input type="radio" name="emi" checked="checked" /><label>Select</label></div></td>
+                               </tr>
+                                 <tr>
+                                 <td>6</td>
+                                 <td>3.5</td>
+                                 <td>25000</td>
+                                 <td><div><input type="radio" name="emi"/><label>Select</label></div></td>
+                               </tr>
+                                 <tr>
+                                 <td>9</td>
+                                 <td>5.5</td>
+                                 <td>35000</td>
+                                 <td><div><input type="radio" name="emi"/><label>Select</label></div></td>
+                               </tr>								 
+                            </tbody>
+                        </table>
+                          
+                          
+                      </div>
+                     
+                   </div>
+                </div>
+             </div>
+             <div class="row form-group">
+                <div class="col-sm-12">
+                   <input type="checkbox" name="vehicle" value="Bike"> I Accept terms & condition proceed
+                </div>
+             </div>
+                <div class="row form-group">
+                <div class="col-sm-12 text-center">
+                   <button type="submit" class="btn btn-primary" ng-click="submitConfirm()">Confirm</button>
+                </div>
+             </div>
+          </div>
+          
+       </div>
+    

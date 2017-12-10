@@ -1,0 +1,28 @@
+[
+    {
+    "name" : "DBS",
+    "amount":"10000",
+    "status":"Approved"
+},
+{
+    "name" : "CITIBANK",
+    "amount":"15000",
+    "status":"Declined"
+},
+{
+    "name" : "HDFC",
+    "amount":"25000",
+    "status":"Pending"
+},
+{
+    "name" : "ICICI",
+    "amount":"12500",
+    "status":"Approved"
+},
+{
+    "name" : "SBI",
+    "amount":"13400",
+    "status":"Approved"
+}
+
+]
