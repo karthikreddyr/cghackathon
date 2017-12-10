@@ -7,12 +7,17 @@
     <div class="modal-body">
        <div class="row form-group">
           <div class="col-sm-12">
-             <div class="Congrats">Congratulations John!</div>    
+             <div class="Congrats">Congratulations <span class="text-capitalize">{{username}}</span> !</div>    
              <div class="congoline">Your Loan request is processed and</div>		
              <div class="congoline"> required amount has been credited into your account sucessfully</div>						
           </div>
-          
-       </div>               
+         
+       </div>   
+       <div class="row form-group">
+            <div class="col-sm-12 text-center">
+               <button type="submit" class="btn btn-primary" ng-click="ok()">Ok</button>
+            </div>
+         </div>            
     </div>
     
  </div>

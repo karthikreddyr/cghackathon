@@ -1,26 +1,26 @@
 [
     {
-    "name" : "DBS",
+    "name" : "JPMorgan Chase",
     "amount":"10000",
     "status":"Approved"
 },
 {
-    "name" : "CITIBANK",
+    "name" : "Bank of America",
     "amount":"15000",
     "status":"Declined"
 },
 {
-    "name" : "HDFC",
+    "name" : "Wells Fargo",
     "amount":"25000",
-    "status":"Pending"
+    "status":"Approved"
 },
 {
-    "name" : "ICICI",
+    "name" : "Citigroup",
     "amount":"12500",
     "status":"Approved"
 },
 {
-    "name" : "SBI",
+    "name" : "Barclays",
     "amount":"13400",
     "status":"Approved"
 }

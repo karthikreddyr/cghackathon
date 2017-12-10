@@ -1,0 +1,8 @@
+
+    {
+    "username" : "john",
+    "password":"john",
+    "bankname":"JPMorgan Chase",
+    "accountnumber": "12345678"
+}
+

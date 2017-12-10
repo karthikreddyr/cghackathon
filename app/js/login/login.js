@@ -11,7 +11,6 @@ angular.module('myApp.login', ['ngRoute', 'ui.router'])
   
 
   .controller('LoginCtrl', ['$scope', '$state', '$location', '$http', function ($scope, $state, $location, $http) {
-    
 
     $scope.invalidDetails = false;
     if (localStorage.getItem("username")) {
@@ -23,15 +22,19 @@ angular.module('myApp.login', ['ngRoute', 'ui.router'])
      {
        $location.path('login');
      }
-    $http.get("/json/login.json")
+    $http.get("/json/login.txt")
       .then(function (response) {
         $scope.serverUserName = response.data.username;
         $scope.serverPassword = response.data.password;
+        $scope.serverbankname = response.data.bankname;
+        $scope.serveraccountnumber = response.data.accountnumber;
       });
     $scope.submitLogin = function () {
 
-      if ($scope.username === $scope.serverUserName && $scope.password === $scope.serverPassword) {
-        localStorage.setItem("username", $scope.username);
+      if ($scope.username.toUpperCase() === $scope.serverUserName.toUpperCase() && $scope.password === $scope.serverPassword) {
+        localStorage.setItem("username", $scope.serverUserName);
+        localStorage.setItem("bankname", $scope.serverbankname);
+        localStorage.setItem("accountnumber", $scope.serveraccountnumber);
        $location.path('dashboard');
 
       }

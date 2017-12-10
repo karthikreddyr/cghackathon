@@ -8,7 +8,7 @@
              <div class="row left_sec">
    <ul>
    <li>My Accounts</li>
-   <li><a href="javascript:void(0);">DBS Bank<br> 567667888889</a></li>
+   <li><a href="javascript:void(0);">{{bankName}}<br> {{accountNumber}}</a></li>
    </ul>
    </div>
            </div>
@@ -16,7 +16,7 @@
    <div class="right_sec">
               <div class="row">
     <div class="col-xs-7">
-    <b>DBS Bank (567667888889)</b> 
+    <b>{{bankName}} ({{accountNumber}})</b> 
     </div>
     <div class="col-xs-5 text-right">
     <ul class="ac_settings">
@@ -30,43 +30,75 @@
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
-<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Account Info </a></li>
-<li role="presentation"><a  href="javascript:void(0);"aria-controls="profile" role="tab" data-toggle="tab"> Monthly Info</a></li>
+<li role="presentation" class="active"><a href="javascript:void(0);" aria-controls="home" role="tab" data-toggle="tab">Account Info </a></li>
+<li role="presentation"><a  href="javascript:void(0);" aria-controls="profile" role="tab" data-toggle="tab"> Monthly Info</a></li>
 <li role="presentation"><a href="javascript:void(0);" aria-controls="messages" role="tab" data-toggle="tab">Communication Details</a></li>
 <li role="presentation"><a href="javascript:void(0);" aria-controls="settings" role="tab" data-toggle="tab">Personal Details</a></li>
 </ul>
 
 <!-- Tab panes -->
-<div class="tab-content">
-<div role="tabpanel" class="tab-pane active" id="home">
-<div class="form-group">
-<ul class="ac_info">
-<li>Current Balance</li>
-<li>:</li>
-<li>{{currentbalance}} INR</li>
-</ul>
-</div>
-<div class="form-group">
-<ul class="ac_info">
-<li>Average Monthly Income</li>
-<li>:</li>
-<li>{{monthlyBlanace}} INR</li>
-</ul>
-</div>
-<div class="form-group">
-<ul class="ac_info">
-<li>Eligible Loan Amount </li>
-<li>:</li>
-<li>{{eligibleLoanAmount}} INR</li>
-<li><button class="btn btn-primary btn-xs" ng-click="loanConfirm()">Apply</button></li>
-</ul>
-</div>
-</div>
-<div role="tabpanel" class="tab-pane" id="profile">...</div>
-<div role="tabpanel" class="tab-pane" id="messages">...</div>
-<div role="tabpanel" class="tab-pane" id="settings">...</div>
-</div>
+<div >
+<div class="tab-content" >
+  <div role="tabpanel" class="tab-pane active" id="home">
+    <div class="form-group">
+      <ul class="ac_info">
+        <li>Current Balance</li>
+        <li>:</li>
+        <li>{{currentbalance}} USD</li>
+      </ul>
+    </div>
+    <div class="form-group">
+      <ul class="ac_info">
+        <li>Avg Monthly Income</li>
+        <li>:</li>
+        <li>{{monthlyBlanace}} USD</li>
+      </ul>
+    </div>
 
+    <div class="form-group">
+      <ul class="ac_info">
+        <li>Avg Monthly Expenses</li>
+        <li>:</li>
+        <li>25000 USD</li>
+      </ul>
+    </div>
+
+    <div class="form-group">
+      <ul class="ac_info">
+        <li>Avg Monthly Loan repayments</li>
+        <li>:</li>
+        <li>2000 USD</li>
+      </ul>
+    </div>
+    <div class="form-group">
+      <ul class="ac_info">
+        <li>Credit Score</li>
+        <li>:</li>
+        <li>650</li>
+      </ul>
+    </div>
+
+    <div class="form-group">
+      <ul class="ac_info">
+        <li>Eligible Loan Amount </li>
+        <li>:</li>
+        <li>{{eligibleLoanAmount}} USD</li>
+        <li>
+          <button class="btn btn-primary btn-xs" ng-click="loanConfirm()">Apply for loan</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="profile">...</div>
+  <div role="tabpanel" class="tab-pane" id="messages">...</div>
+  <div role="tabpanel" class="tab-pane" id="settings">...</div>
+</div>
+<div class="tab-content" >
+<ul> 
+  <li><img src="./styles/images/expenses-analysis.png" alt="Expenses Analysis" height="250" width="250"></button></li>
+  </ul>
+</div>
+</div>
 </div>
     </div>
  

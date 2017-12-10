@@ -10,13 +10,16 @@ angular.module('myApp.myaccount', ['ngRoute', 'ui.bootstrap'])
   }])
 
   .controller('MyaccountCtrl', ['$scope', '$location', '$http', '$uibModal', function ($scope, $location, $http, $uibModal) {
+   
+   $scope.bankName=  localStorage.getItem("bankname");
+   $scope.accountNumber=  localStorage.getItem("accountnumber");
     if (!localStorage.getItem("username")) {
 
       $location.path('login');
 
     }
 
-    $http.get("/json/myaccount.json")
+    $http.get("/json/myaccount.txt")
       .then(function (response) {
 
         $scope.currentbalance = response.data.currentbalance;
@@ -42,13 +45,18 @@ angular.module('myApp.myaccount', ['ngRoute', 'ui.bootstrap'])
 
                 $scope.requestAmountError = false;
 
-               
+                $scope.username = localStorage.getItem('username');
+                
 
 
                 $scope.close = function () {
                   $uibModalInstance.close();
                 };
-
+                $scope.ok = function () {
+                  $uibModalInstance.dismiss('cancel');
+                  $location.path('dashboard');
+                };
+                
                 $scope.cancel = function () {
                   $uibModalInstance.dismiss('cancel');
                 };

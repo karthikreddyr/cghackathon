@@ -19,7 +19,7 @@ angular.module('myApp.dashboard', ['ngRoute', 'ui.bootstrap'])
   {
     $location.path('login');
   }
-  $http.get("/json/loanstatus.json")
+  $http.get("/json/loanstatus.txt")
   .then(function (response) {
    
     $scope.items = response.data;
